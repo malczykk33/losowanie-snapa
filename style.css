@@ -1,0 +1,155 @@
+
+*, *:before, *:after {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body{
+  background: none;
+  background-color:hsla(0, 0%, 100%, 80%);
+  overflow:hidden;
+}
+a{text-decoration: none;}
+
+.wyniki{
+  width:180px;
+  margin:auto;
+  margin-top:80px;
+  height:260px;
+  margin-bottom:80px;
+}
+
+#b2{
+  height:200px;
+  background:transparent;
+  text-align: center;
+  font-size:30px;
+  font-weight: 900;
+  word-wrap: break-word;
+  margin-bottom:120px;
+
+}
+.progressbar
+{
+  width:320px;
+  height:30px;
+  margin:0;
+  display: block;
+  margin-top:1px;
+  box-shadow: 0px 0px 10px 2px hsla(0, 0%, 0%, 40%);
+}
+.progressbar-content
+{
+  float:left;
+  box-shadow: 0px 0px 20px 0px yellow;
+  background-color:yellow;
+}
+#myProgress1 {
+  background-color: black;
+  margin: 0 auto;
+
+}
+
+
+#p1, #p2, #p3, #p4 {
+    width: 0%;
+    height: 30px;
+    background-color: yellow;
+}
+
+hr.under-nav{
+  width: 100%;
+  border: none;
+  border-top: 5px solid green;  
+}
+
+  
+#wrapper header#main{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+#wrapper header nav{ /* pasek górny cały */
+  height: inherit;
+}
+
+#wrapper main#index{
+  width: 100%;
+  margin-top: 5px;
+}
+#wrapper main#index section#first{ /* pierwsza część indexu */ 
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+#wrapper main#index section#first #main-first-background{
+  height:  100%;
+  z-index:  -1;
+  position:  absolute;
+  width:  100%;
+  opacity: 0.5;
+}
+#wrapper main#index section#first h1{
+  text-align: center;
+  font-size: 80px;
+  padding-top: 150px;
+  color: hsl(0, 0%, 20%);
+}
+#wrapper main#index section#first p{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+  color: hsl(0, 0%, 30%);
+}
+
+a#main-blog-button{
+  text-align: center;
+  background-color: black;
+  color: yellow;
+
+  font-weight: 900;
+  font-size: 20px;
+  padding: 10px 20px;
+
+  display: block;
+  max-width: 11em;
+
+  border: 1px solid hsl(60, 100%, 50%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px hsla(0, 0%, 0%, 20%);
+}
+
+a#main-blog-button:hover{
+  transition-delay: 100ms;
+  transition-duration: 200ms;
+  color: hsl(32, 75%, 50%);
+}
+
+
+
+@media (min-width: 1250px){
+  div#wrapper main, div#wrapper footer, div#wrapper header nav{
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1250px){
+  div#wrapper main, div#wrapper footer, div#wrapper header nav{
+    width: 950px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px){
+  div#wrapper main, div#wrapper footer, div#wrapper header nav{
+    width: 750px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px){
+  div#wrapper main, div#wrapper footer, div#wrapper header nav {width: 90%;}
+  div#wrapper header nav ul li p a{line-height: 1em;}
+}
+
+@media (max-width: 500px){
+  div#wrapper main, div#wrapper footer, div#wrapper header nav {width: 90%;}
+}

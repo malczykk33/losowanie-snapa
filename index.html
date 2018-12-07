@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper" >
+        <header class="shadowed" id="main">
+            <nav></nav>
+            <hr class="under-nav" />
+        </header>
+        
+      
+        <main id="index">
+
+            <section id="first" class="main-section" style="height:1000px">
+                <div id="main-first-background" style="height:1000px; box-shadow:none; ">
+                    <img src="http://antyweb.pl/wp-content/uploads/2015/07/snap1.jpg" width=100%;>
+                </div>
+
+                <h1 id="wynik" style="font-size: 3em; padding-bottom: 20px; width:1200px;">
+                    kliknij przycisk poniżej aby wylosować temat dzisiejszego snapa na dni
+                </h1>
+
+                <a onclick="start();" id="main-blog-button">
+                    losuj
+                </a>
+                <div class="wyniki">
+                    <div id="b1" class="box" style="display:none"></div>
+                    <div id="b2" class="box"></div>
+                    <div id="b3" class="box" style="display:none;"></div>
+                </div>
+                <div>
+                    <div class="progressbar hidden" id="myProgress1" >
+                        <div class="progressbar-content" id="p1" class="hidden"></div>
+                    </div>
+
+                    <div class="progressbar" id="myProgress2" style="display:none;">
+                        <div class="progressbar-content" id="p2"></div>
+                    </div>
+                    <div class="hidden progressbar" id="myProgress3" style="display:none;">
+                        <div class="progressbar-content" id="p3" class="hidden"></div>
+                    </div>
+                </div>
+
+                <p id="progress">kliknij 'losuj'</p>                    
+            </section>
+    </div>
+    <script type="text/javascript" src="start.js"></script>
+</body>
+
+
+</html>
